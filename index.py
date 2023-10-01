@@ -54,13 +54,13 @@ if res.status == 200:
             gold(authentication_token)
             i += 1
             if (i < iterations):
-                print("Fext gold availible in 60 seconds...")
+                print("Next gold availible in 60 seconds...")
                 time.sleep(61)
             else:
-                print("Finished.")     
+                print("Finished all iteration.")     
     else:
         print("Incorrect username or password")
 else:
-    print(f"HTTP Error: {res.status} - {res.reason}")
+    print(f"HTTP Error: {res.status} - {res.reason}, please report to dev")
 
 conn.close()
