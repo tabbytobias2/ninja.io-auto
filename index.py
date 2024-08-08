@@ -3,6 +3,7 @@ import json
 import getpass
 import time
 
+
 def gold(id):
     conn2 = http.client.HTTPSConnection("api2.ninja.io")
 
